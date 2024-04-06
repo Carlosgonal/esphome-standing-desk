@@ -16,7 +16,7 @@ All you need to do is specify the correct pins, and the min/max height of your d
 
 ```yaml
 packages:
-  standing_desk: github://tjhorner/esphome-standing-desk/configs/template.yaml
+  standing_desk: github://Carlosgonal/esphome-standing-desk/configs/template.yaml
 
 substitutions:
   # Required (replace these with your own values!)
@@ -46,7 +46,7 @@ If you only need the component which reads the height from your desk, you can us
 
 ```yaml
 external_components:
-  - source: github://tjhorner/esphome-standing-desk
+  - source: github://Carlosgonal/esphome-standing-desk
     components: [ standing_desk_height ]
 
 sensor:
@@ -69,7 +69,7 @@ To use, add this line to your config:
 
 ```yaml
 packages:
-  presets_addon: github://tjhorner/esphome-standing-desk/configs/addons/presets.yaml
+  presets_addon: github://Carlosgonal/esphome-standing-desk/configs/addons/presets.yaml
 ```
 
 Then, if you are not using a pre-made desk config, you must add the following substitutions:
@@ -84,7 +84,7 @@ substitutions:
 
 ## Hardware
 
-You can find the open source designs I've made for a generic desk controller [here](https://github.com/tjhorner/wifi-desk-controller). It features two RJ45 jacks so you can passthrough to the original keypad. If you order the boards from JLCPCB and get the parts from DigiKey, the cost is about $5 for a single board.
+You can find the open source designs I've made for a generic desk controller [here](https://github.com/Carlosgonal/wifi-desk-controller). It features two RJ45 jacks so you can passthrough to the original keypad. If you order the boards from JLCPCB and get the parts from DigiKey, the cost is about $5 for a single board.
 
 But if you don't want to to order and assemble everything yourself, you can buy one from me [here](https://shop.horner.tj/things/desk-controller). And it even comes with a fancy 3D-printed case!
 
